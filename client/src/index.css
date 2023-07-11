@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700&display=swap");
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: rgba(0, 0,0,0);
+  font-family: epilogue;
+}
+.linear-gradient {
+  background: linear-gradient(
+    179.14deg,
+    rgba(32, 18, 63, 0) -7.14%,
+    #000000 87.01%
+  );
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  filter: invert(0.8);
+}
+
+.app{
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  background: url('./assets/wallpaperflare.com_wallpaper1.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: scroll;
+ 
+}
+.container{
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 3%;
+  /* backdrop-filter: blur(10px); */
+}
+h1{
+  text-align: center;
+  color:white;
+}
+/* component styles */
+/* Header */
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 15% 1rem 15%;
+  /* background: rgba(0, 0, 0, 0.242);
+  backdrop-filter: blur(15px); */
+  
+  z-index: 999;
+}
+/* Form-field-Component */
+label{
+  display: flex;
+  flex-direction: column;
+  color: aliceblue;
+  gap: 5px;
+}
+.input-box,.text-area{
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.507);
+  padding: 15px;
+  border-radius: 10px;
+}
+input::placeholder,textarea::placeholder{
+  color: rgba(255, 255, 255, 0.518);
+}
+/* Custom-Buttom */
+.custom-button{
+  padding: 1em;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background: rgba(0, 0, 0, 0.604);
+  backdrop-filter: blur(15px);
+  
+}
+.custom-button:hover{
+  color: black;
+  background: rgba(255, 255, 255, 0.808);
+  transition: all .2s linear;
+  cursor: pointer;
+}
+.link{
+  color: rgb(0, 110, 255);
+  cursor: pointer;
+  text-decoration: none;
+}
+.link:hover{
+  text-decoration: underline;
+ 
+}
+
+
+/* form */
+
+.input-form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+form{
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.06);
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  min-width: 40%;
+  gap: 20px;
+}
+
+
+.justify-evenly{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+}
+.flex-col{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+/* loader */
+.loader{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000000a7;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 999;
+}
+
+.campaign-card{
+  height: 300px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.06);
+  overflow: hidden;
+  display: flex;
+  gap: 10px;
+}
+.img-box img,.img-box{
+  width: 300px;
+  height: 300px;
+  
+}
+.content-box{
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+/* Campaign-Details */
+.campaign-details{
+  display: flex;
+  flex-direction: column;
+  gap:30px;
+}
+.campaign-details #img{
+  width: 100%;
+}
+.campaign-details a{
+  color: white;
+  text-decoration: none;
+}
+.campaign-details a:hover{
+  color: white;
+  text-decoration: underline;
+
+}
+.count-box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 10px 20px 10px 20px;
+  background: rgba(255, 255, 255, 0.242);
+  backdrop-filter: blur(5px);
+  height: 60px;
+}
+.fund-box{
+  display: flex;
+  justify-content: space-between;
+  background: rgba(250, 250, 250, 0.027);
+  backdrop-filter: blur(5px);
+  padding: 2em;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  border: 1px solid white;
+}
+.fund-box-child{
+  width: 100%;
+}
+.fund-box-child-card{
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+ 
+  background: rgba(250, 250, 250, 0.125);
+  backdrop-filter: blur(15px);
+  padding: 2em;
+  border-radius: 10px;
+}
+.danger{
+  color: red;
+}
